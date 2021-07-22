@@ -3,7 +3,7 @@ import environ
 
 
 DEBUG=False
-ALLOWED_HOSTS = ['52.59.71.106', '127.0.0.1','52.59.71.106:8000']
+ALLOWED_HOSTS = ['*']
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
