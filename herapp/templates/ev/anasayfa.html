@@ -122,7 +122,7 @@
                         </a>
                         <div class="row">
                             <div class="col-md-12 ">
-                                <a class="read-more " href="{%url 'contact'%} ">{{fotos.resim_adı | safe | truncatechars_html:28}}</a>
+                                <a class="read-more " href="{%url 'contact'%} ">{{fotos.resim_adı | safe | truncatechars_html:40}}</a>
                             </div>
                             <br>
                         </div>
@@ -239,13 +239,13 @@
     <!-- end contact -->
     <!-- footer -->
     {%block footer%}
-    <footer>
-        <div id="contact" class="footer">
-            <div class="container ">
-                <div class="row pdn-top-30">
-                    <div class="col-md-12">
-                        <div class="footer-box">
-                            <div class="headinga">
+<footer>
+    <div id="contact" class="footer">
+        <div class="container">
+            <div class="row pdn-top-30">
+                <div class="col-md-12 ">
+                    <div class="footer-box">
+                        <div class="headinga">
                                 <h3>Adres ve Bilgilerimiz</h3>
                                 <span>HERA KÖMÜRCÜLÜK İNŞAAT GIDA VE DIŞ TİCARET LİMİTED ŞİRKETİ</span>
                                 <span>ADRES : FEVZİ ÇAKMAK MAHALLESİ, SADULAH SEVER KÜMESİ, KÜME EVLERİ NO:49, FOÇA-İZMİR</span>
@@ -253,32 +253,31 @@
                                 <p>05532623798
                                     <br>hakankaplanlar35@gmail.com</p>
                             </div>
-                            <ul class="location_icon">
-                                <li> <a href="# "><i class="fa fa-facebook-f "></i></a></li>
-                                <li> <a href="# "><i class="fa fa-twitter"></i></a></li>
-                                <li> <a href="# "><i class="fa fa-instagram"></i></a></li>
+                        <ul class="location_icon">
+                            <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                        <div class="menu-bottom">
+                            <ul class="link">
+                                <li><a href="{%url 'anasayfa'%}">Anasayfa</a> </li>
+                                <li><a href="{%url 'special'%}">Nakliye</a></li>
+                                <li><a href="{%url 'brand'%}">Ürünler</a> </li>
+                                <li><a href="{%url 'contact'%}">Bize Ulaşın</a></li>
+                                <li><a href="{%url 'about'%}">Biz Kimiz</a></li>
                             </ul>
-                            <div class="menu-bottom">
-                                <ul class="menu-area-main">
-                                    <li class="active">
-                                        <a href="{%url 'anasayfa'%}">Anasayfa</a> </li>
-                                    <li><a href="{%url 'contact'%}">Biz Kimiz</a></li>
-                                    <li><a href="{%url 'special'%}">Nakliye</a></li>
-                                    <li><a href="{%url 'contact'%}">Kaydol</a> </li>
-                                    <li><a href="{%url 'contact'%}">Bize Ulaşın</a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container">
+        </div>
+        <div class="copyright">
+            <div class="container">
                 <p>2021 Yapıldı<a href="www.google.com.tr\">AKIN OSLU</a></p>
-                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
     {%endblock%}
     <!-- end footer -->
         <!-- contact -->
